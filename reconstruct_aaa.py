@@ -78,12 +78,8 @@ def reconstruct(name: str, out_dir: str, contour: np.array, centerline: np.array
 
 @app.command()
 def run_reconstruction(
-    in_dir: str = typer.Option(
-        "/Users/patrykrygiel/Documents/UTWENTE/Datasets/AAA/M3i/full-segmentation", "-i", "--in-dir"
-    ),
-    out_dir: str = typer.Option(
-        "/Users/patrykrygiel/Documents/UTWENTE/Datasets/AAA/M3i/raw_reconstructions", "-o", "--out-dir"
-    ),
+    in_dir: str = typer.Option("", "-i", "--in-dir"),
+    out_dir: str = typer.Option("", "-o", "--out-dir"),
     n_jobs: int = typer.Option(1, "-n", "--n-jobs"),
 ):
     # Define segments to be reconstructed

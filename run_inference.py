@@ -16,7 +16,7 @@ app = typer.Typer()
 
 @app.command()
 def inference(
-    root_dir: str = typer.Option("/Users/patrykrygiel/Documents/UTWENTE/Datasets/AAA/UT/mhd", "-r", "--root-dir"),
+    root_dir: str = typer.Option("", "-r", "--root-dir"),
     output_dir: str = typer.Option("results/test", "-o", "--output-dir"),
     device: str = typer.Option("cpu", "-d", "--device"),
 ):
