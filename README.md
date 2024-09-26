@@ -29,7 +29,7 @@ Tracking and segmentation are perfomed jointly and start from the specified seed
 
 Each vessel controller is specified by `VesselConfig` which defines tracking and segmentation hyperparameters and global control (see line 127 in `src/sire/aaa_wrapper.py`).
 
-Segmentation yields a set of 2D contours that delineate vessel lumen.
+Checkpoints for segmentation model and tracking model should be places under `src/sire/modesl/checkpoints` directory.
 
 ### 2.3. Surface reconstruction
 2D contours can be reconstructed into 3D meshes by fitting an Implicit Neural Representation (INR) - see script `reconstruct_aaa.py` how to do that.
