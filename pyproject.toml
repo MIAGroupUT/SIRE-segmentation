@@ -67,7 +67,7 @@ lint = [
 dev = ["sire[logging, jupyter, lint]"]
 
 [project.urls]
-"Source" = "https://github.com/PatRyg99/SIRE"
+"Source" = "https://github.com/MIAGroupUT/SIRE-segmentation"
 
 [tool.setuptools.packages.find]
 where = ["src"]
